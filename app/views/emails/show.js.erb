@@ -1,0 +1,7 @@
+column = document.getElementById("to-be-filled");
+
+column.addEventListener("turbo-load", add_content);
+
+let add_content = function () {
+    column.innerHTML = "<%= j render 'content', email: @email %>")
+};

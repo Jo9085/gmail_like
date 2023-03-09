@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title> Gmail Like </title>
+    </head>
+    <body>
+    <br>
+        <h1> Voici le mail N° <%= params[:id]%> que tu souhaitais afficher ! </h1><br>
+            <p>
+              <h3> Objet : <%= @email.object %></h3><br>
+              <h4> Contenu : <%= @email.body%></h4>
+            </p>
+
+    </body>
+</html>
